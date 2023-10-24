@@ -96,7 +96,6 @@ class _JourneyPlannerAppState extends State<JourneyPlannerApp> {
                   String name = result['disassembledName'] ?? assembledName;
                   String location = result['parent']['name'];
                   String type = result['type'];
-                  bool? isBest = result['isBest'];
 
                   //Convert displayed info to utf-8
                   name = const Utf8Decoder().convert(name.codeUnits);
